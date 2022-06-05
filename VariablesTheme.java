@@ -141,7 +141,7 @@ public class VariablesTheme {
         String ss = Integer.toString(seconds % 60);
         hh = (hh.length() == 2) ? hh : ("0" + hh);
         mm = (mm.length() == 2) ? mm : ("0" + mm);
-        ss = (ss.length() == 2) ? ss : ("0" + hh); 
+        ss = (ss.length() == 2) ? ss : ("0" + ss); 
         System.out.println(hh + ":" + mm + ":" + ss);
         }
 }
