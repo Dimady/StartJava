@@ -128,9 +128,7 @@ public class VariablesTheme {
         hundreds = srcNum / 100;
         tens = srcNum % 100 / 10;
         units = srcNum % 10;
-        System.out.println(hundreds + " hundreds");
-        System.out.println(tens + " tens");
-        System.out.println(units + " units");
+        System.out.println(hundreds + " hundreds\n" + tens + " tens\n" + units + " units");
 
         System.out.println("\n10. Converting Seconds");
         int totalSec = 86399;
