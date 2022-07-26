@@ -26,11 +26,11 @@ public class VariablesTheme {
         System.out.println(isLaptop);
 
         System.out.println("\n2. Calculation of the cost of goods with a discount");
-        int product1 = 100;
-        int product2 = 200;
-        double discount = (product1 + product2) * 11 / 100;
+        int priceGoodsX = 100;
+        int priceGoodsY = 200;
+        double discount = (priceGoodsX + priceGoodsY) * 11 / 100;
         System.out.println(discount);
-        System.out.println(product1 + product2 - discount);
+        System.out.println(priceGoodsX + priceGoodsY - discount);
 
         System.out.println("\n3. Output of the JAVA word to the console");
         System.out.println("   J    a  v     v  a");
