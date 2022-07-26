@@ -116,12 +116,12 @@ public class VariablesTheme {
         System.out.println("The product of the digits of the number N = " + productDigits);
 
         System.out.println("\n8. Output to the ASCII console-art Duke");
-        char sl = '/', bs = '\\', u = '_', ob = '(', cb = ')', sp = ' ';
+        char sl = '/', bs = '\\', ul = '_', ob = '(', cb = ')', sp = ' ';
         System.out.println("" + sp + sp + sp + sp + sl + bs);
         System.out.println("" + sp + sp + sp + sl + sp + sp + bs);
-        System.out.println("" + sp + sp + sl + u + ob + sp + cb + bs);
+        System.out.println("" + sp + sp + sl + ul + ob + sp + cb + bs);
         System.out.println("" + sp + sl + sp + sp + sp + sp + sp + sp + bs);
-        System.out.println("" + sl + u + u + u + u + sl + bs + u + u + bs);
+        System.out.println("" + sl + ul + ul + ul + ul + sl + bs + ul + ul + bs);
 
         System.out.println("\n9. Displaying the number of hundreds, tens and units of a number");
         srcNum = 123;
