@@ -23,6 +23,7 @@
 
 Вывод на консоль слова JAVA
 Отобразите в консоли слово JAVA, как в примере ниже:
+
    J    a  v     v  a                                                  
    J   a a  v   v  a a                                                 
 J  J  aaaaa  V V  aaaaa                                                
