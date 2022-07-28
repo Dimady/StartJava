@@ -40,21 +40,19 @@ public class IfElseStatementTheme {
         if (num != 0) {
             if (num % 2 == 0) {
                 System.out.println("Число " + num + " чётное");
-            }
-            else {
+            } else {
                 System.out.println("Число " + num + " нечётное");
             }
             if (num > 0) {
                 System.out.println("Число " + num + " положительное");
-            }
-            else {
+            } else {
                 System.out.println("Число " + num + " отрицательное");
             }
         } else {
             System.out.println("num = " + num);
         }
 
-        System.out.println("4. Поиск одинаковых цифр в числах");
+        System.out.println("\n4. Поиск одинаковых цифр в числах");
         num1 = 345;
         num2 = 745;
         System.out.println("num1 = " + num1);
@@ -73,17 +71,14 @@ public class IfElseStatementTheme {
         char symbol = '\u0057';
         if (symbol >= 'A' && symbol <= 'Z') {
             System.out.println("Символ " + symbol + " - это большая буква");
-        } else {
-            if (symbol >= 'a' && symbol <= 'z') {
-                System.out.println("Символ " + symbol + " - это маленькая буква");
-            } else {
-                if (symbol >= '0' && symbol <= '9') {
+        } else if (symbol >= 'a' && symbol <= 'z') {
+            System.out.println("Символ " + symbol + " - это маленькая буква");
+        } else if (symbol >= '0' && symbol <= '9') {
                     System.out.println("Символ " + symbol + " - это цифра");
                 } else {
                     System.out.println("Символ " + symbol + " - это не буква и не цифра");
                 }
-            }
-        }
+
         System.out.println("\n6. Определение суммы вклада и начисленных банком %");
         int depositAmount = 300_000;
         System.out.println("Сумма вклада: " + depositAmount + " руб.");
@@ -115,10 +110,10 @@ public class IfElseStatementTheme {
         int rentPremises = 5000;
         int productSales = 13000;
         int costGoods = 9000;
-        int incomeMonth = productSales - costGoods - rentPremises;
+        int income = (productSales - costGoods - rentPremises) * 12;
         System.out.print("Прибыль за год: ");
-        if (incomeMonth > 0) System.out.println("+" + incomeMonth * 12);
-        else System.out.println(incomeMonth * 12);
+        if (income > 0) System.out.println("+" + income);
+        else System.out.println(income);
 
         System.out.println("\n9. Подсчет количества банкнот");
         int totalSum = 567;
@@ -131,6 +126,6 @@ public class IfElseStatementTheme {
             tens = banknotes10;
         }
         System.out.println("100: " + hundreds + " 10: " + tens + " 1: " + units +
-                           "\nИсходная сумма: " + (hundreds * 100 + tens * 10 + units));
+                "\nИсходная сумма: " + (hundreds * 100 + tens * 10 + units));
     }
 }
