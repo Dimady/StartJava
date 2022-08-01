@@ -1,3 +1,5 @@
+package Lesson_1;
+
 public class CyclesTheme {
     public static void main(String[] args) {
         System.out.println("1. Подсчет суммы четных и нечетных чисел");
@@ -70,16 +72,18 @@ public class CyclesTheme {
                 (countOnes % 2 == 0 ? " (четное)" : " (нечетное)") + " количество единиц");
 
         System.out.println("\n6. Отображение фигур в консоли");
-        final int N = 5;
-        for (int j = 0; j < N; j++)
-            for (int k = 0; k < 2 * N; k++)
-                System.out.print("*" + (k == 2 * N - 1 ? "\n" : ""));
+        for (int j = 0; j < 5; j++) {
+            for (int k = 0; k < 10; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
         System.out.println();
         int j = 0;
-        while (j < N) {
+        while (j < 5) {
             int k = 0;
-            while (k < N - j) {
-                System.out.print("#" + (k == N - j - 1 ? "\n" : ""));
+            while (k < 5 - j) {
+                System.out.print("#" + (k == 4 - j ? "\n" : ""));
                 k++;
             }
             j++;
@@ -87,26 +91,26 @@ public class CyclesTheme {
         System.out.println();
         int k = 0;
         do {
-            int l = (N / 2 - k > 0 ? k + 1 : N - k);
+            int l = (2 - k > 0 ? k + 1 : 5 - k);
             int m = 0;
             do {
                 System.out.print('$' + (m == l - 1 ? "\n" : ""));
                 m++;
             } while (m < l);
             k++;
-        } while (k < N);
+        } while (k < 5);
 
         System.out.println("\n7. Отображение ASCII-символов");
-        System.out.println("Dec Char");
-        System.out.println("--------");
+        System.out.println("Dec    Char");
+        System.out.println("-----------");
         for (int n = 0; n < 48; n++) {
             if (n % 2 != 0) {
-                System.out.printf("%3d %c\n", n, n);
+                System.out.printf("%-10d %c\n", n, n);
             }
         }
         for (int n = 97; n < 123; n++) {
             if (n % 2 == 0) {
-                System.out.printf("%3d %c\n", n, n);
+                System.out.printf("%-10d %c\n", n, n);
             }
         }
 

@@ -1,3 +1,5 @@
+package Lesson_1;
+
 public class VariablesTheme {
     public static void main(String[] args) {
         System.out.println("1. Creating variables and displaying their values to the console");
