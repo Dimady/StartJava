@@ -101,16 +101,16 @@ public class CyclesTheme {
         } while (k < 5);
 
         System.out.println("\n7. Отображение ASCII-символов");
-        System.out.println("Dec    Char");
-        System.out.println("-----------");
+        System.out.println(" Dec\tChar");
+        System.out.println("------------");
         for (int n = 0; n < 48; n++) {
             if (n % 2 != 0) {
-                System.out.printf("%-10d %c\n", n, n);
+                System.out.printf("%3d\t\t%c\n", n, n);
             }
         }
         for (int n = 97; n < 123; n++) {
             if (n % 2 == 0) {
-                System.out.printf("%-10d %c\n", n, n);
+                System.out.printf("%3d\t\t%c\n", n, n);
             }
         }
 

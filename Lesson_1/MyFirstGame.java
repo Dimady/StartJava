@@ -18,8 +18,8 @@ public class MyFirstGame {
                 System.out.println("Данное число больше того, что загадал компьютер");
                 nextGuess = guess - guessStep;
             } else {
-            System.out.println("Данное число меньше того, что загадал компьютер");
-            nextGuess = guess + guessStep;
+                System.out.println("Данное число меньше того, что загадал компьютер");
+                nextGuess = guess + guessStep;
             }
             if (guessStep > 1) {
                 guessStep /= 2;

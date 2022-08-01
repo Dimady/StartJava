@@ -10,15 +10,15 @@ public  class Calculator {
         int b = 3;
         double result = 0;
         if (mathOperation == '+') {
-        result = a + b;
+            result = a + b;
         } else if (mathOperation == '-') {
-        result = a - b;
+            result = a - b;
         } else if (mathOperation == '*') {
-        result = a * b;
+            result = a * b;
         } else if (mathOperation == '/') {
-        result = a / b;
+            result = a / b;
         } else if (mathOperation == '%') {
-        result = a % b;
+            result = a % b;
         } else if (mathOperation == '^') {
             result = 1;
             for (int i = 0; i < b; i++) {
