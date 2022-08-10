@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-        boolean nextCalc = true;
-        while (nextCalc) {
+        Calculator calculator = new Calculator();
+        String nextCalc;
+        do {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите первое число: ");
             int a = scanner.nextInt();
@@ -13,15 +14,11 @@ public class CalculatorTest {
             char mathOperation = scanner.next().charAt(0);
             System.out.println("Введите второе число: ");
             int b = scanner.nextInt();
-            System.out.println(Calculator.calc(a, mathOperation, b));
-            while (true) {
+            System.out.println(calculator.calc(a, mathOperation, b));
+            do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]: ");
-                String next = scanner.next();
-                if (next.equals("no")) {
-                    nextCalc = false;
-                    break;
-                } else if (next.equals("yes")) break;
-            }
-        }
+                nextCalc = scanner.next();
+            } while (!nextCalc.equals("no") && !nextCalc.equals("yes"));
+        } while (!nextCalc.equals("no"));
     }
 }

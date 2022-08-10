@@ -3,25 +3,37 @@ package Lesson_2;
 import java.util.Scanner;
 
 public class GuessNumber {
-    public static String guess(String name1, String name2) {
-        Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
+
+    public Player initPlayer1() {
+        System.out.println("Введите имя игрока №1: ");
+        String name = scanner.next();
+        return new Player(name);
+    }
+
+    public Player initPlayer2() {
+        System.out.println("Введите имя игрока №2: ");
+        String name = scanner.next();
+        return new Player(name);
+    }
+
+    public String guess(Player player1, Player player2) {
         int randomNumber = (int) (Math.random() * 100) + 1;
-        int guess, i;
+        int guess;
+        boolean gamer1 = true;
         do {
-            i = 1;
-            do {
-                System.out.println("Ход игрока №" + i + ":");
+                System.out.println("Ход игрока №" + (gamer1 ? 1 : 2) + ":");
                 System.out.print("Введите число: ");
                 guess = scanner.nextInt();
                 if (guess > randomNumber) {
                     System.out.println("Число " + guess + " больше того, что загадал компьютер");
-                    i++;
-                } else if (guess < randomNumber) {
+                    gamer1 = !gamer1;
+                } else {
                     System.out.println("Число " + guess + " меньше того, что загадал компьютер");
-                    i++;
-                } else break;
-            } while (i == 2);
+                    gamer1 = !gamer1;
+                }
         } while (guess != randomNumber);
-        return "Поздравляю, число угадано! Победил игрок: " + (i == 1 ?  name1 : name2);
+        return "Поздравляю, число угадано! Победил игрок: " +
+                (gamer1 ?  player1.getName() : player2.getName());
     }
 }
