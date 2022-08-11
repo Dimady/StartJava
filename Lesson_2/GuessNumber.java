@@ -14,7 +14,6 @@ public class GuessNumber {
     public void guess() {
         Scanner scanner = new Scanner(System.in);
         int randomNumber = (int) (Math.random() * 100) + 1;
-        System.out.println(randomNumber);
         int guess;
         int gamer = 1;
         do {
