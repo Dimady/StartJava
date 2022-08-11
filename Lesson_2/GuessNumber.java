@@ -22,10 +22,10 @@ public class GuessNumber {
             guess = scanner.nextInt();
             if (guess > randomNumber) {
                 System.out.println("Число " + guess + " больше того, что загадал компьютер");
-                gamer = (gamer == 1 ? 2 : 1);
+                gamer = gamer % 2 + 1;
             } else if (guess < randomNumber) {
                 System.out.println("Число " + guess + " меньше того, что загадал компьютер");
-                gamer = (gamer == 1 ? 2 : 1);
+                gamer = gamer % 2 + 1;
             }
         } while (guess != randomNumber);
         System.out.println("Поздравляю, число угадано! Победил игрок: " +
