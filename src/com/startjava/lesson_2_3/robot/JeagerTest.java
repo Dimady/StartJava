@@ -1,4 +1,4 @@
-package Lesson_2;
+package src.startjava.lesson_2_3.robot;
 
 public class JeagerTest {
     public static void main(String[] args) {

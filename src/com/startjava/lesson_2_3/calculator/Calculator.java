@@ -1,4 +1,4 @@
-package Lesson_2;
+package src.startjava.lesson_2_3.calculator;
 
 public  class Calculator {
     public double calc(int a, char mathOperation, int b) {

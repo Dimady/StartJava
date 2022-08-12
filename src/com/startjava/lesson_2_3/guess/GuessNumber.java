@@ -1,16 +1,14 @@
-package Lesson_2;
+package src.startjava.lesson_2_3.guess;
 
 import java.util.Scanner;
 
 public class GuessNumber {
     private Player playerOne;
     private Player playerSecond;
-
     public GuessNumber(Player playerOne, Player playerSecond) {
         this.playerOne = playerOne;
         this.playerSecond = playerSecond;
     }
-
     public void guess() {
         Scanner scanner = new Scanner(System.in);
         int randomNumber = (int) (Math.random() * 100) + 1;
