@@ -1,4 +1,4 @@
-package src.startjava.lesson_2_3.robot;
+package src.com.startjava.lesson_2_3.robot;
 
 public class Jeager {
     private String modelName;
